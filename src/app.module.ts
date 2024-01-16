@@ -28,7 +28,7 @@ import { PaymentModule } from './payment/payment.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: '103.82.135.147',
+      host: 'localhost',
       port: 3307,
       username: 'root',
       password: 'duong15032001',
