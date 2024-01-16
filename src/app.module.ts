@@ -22,12 +22,13 @@ import { AuthModule } from './auth/auth.module';
 import { CategoryModule } from './category/category.module';
 import { OrderDetailsModule } from './order-details/order-details.module';
 import { EmailModule } from './email/email.module';
+import { PaymentModule } from './payment/payment.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: '103.82.135.147',
       port: 3307,
       username: 'root',
       password: 'duong15032001',
@@ -58,6 +59,7 @@ import { EmailModule } from './email/email.module';
     AuthModule,
     OrderDetailsModule,
     EmailModule,
+    PaymentModule,
   ],
 })
-export class AppModule {}
+export class AppModule { }
